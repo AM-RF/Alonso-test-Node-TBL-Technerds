@@ -7,8 +7,6 @@ new UserSchema = new Schema({
     lname: { type: String, required: true },
     email: { type: String, required: true, unique: true, lowercase:true },
     password: { type: String, required: true, select: false },
-    signupDate: { type: Date, default: Date.now() },
-    lastLogin: Date
 });
 
 UserSchema.pre('save', (next) => {
