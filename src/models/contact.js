@@ -6,7 +6,6 @@ const ContactSchema = new Schema({
     lname: { type: String, required: true },
     email: { type: String, required: true ,unique: true, lowercase: true },
     number: { type: String, required: true , unique: true}
-    //id_user: { type: number, }
 });
 
 module.exports = mongoose.model('Contact',ContactSchema);

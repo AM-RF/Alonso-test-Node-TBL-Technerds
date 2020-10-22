@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 
-import App from './App';
 import Login from './Login';
+import Register from './Register';
+import App from './App';
 
-render(<Login/>, document.getElementById('app'));
+render(<Register/>, document.getElementById('app'));

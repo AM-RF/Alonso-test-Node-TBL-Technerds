@@ -14,8 +14,10 @@ app.use(morgan('dev'));
 app.use(express.json());
 
 //Router
+app.use('/api/register',require('./routes/userRegister'));
+app.use('/api/authenticate',require('./routes/userAuthentication'));
 app.use('/api/contacts',require('./routes/contact'));
-  
+
 // Static files
 app.use(express.static(path.join(__dirname, 'public'))) 
 

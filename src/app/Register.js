@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Login extends Component{
+class Register extends Component{
     render(){
         return(
             <div>
@@ -15,7 +15,23 @@ class Login extends Component{
                             <div className="card mx-auto">
                                 <div className="card-body">
                                     <form>
-                                        <h4 className="card-tittle text-center">Contact System</h4>
+                                        <h4 className="card-tittle text-center">Register</h4>
+                                        <div className="form-group ">
+                                            <input 
+                                                type="text" 
+                                                fname="fname"     
+                                                className="form-control" 
+                                                placeholder="Name" 
+                                                required/>
+                                        </div>
+                                        <div className="form-group ">
+                                            <input 
+                                                type="text" 
+                                                name="lname"     
+                                                className="form-control" 
+                                                placeholder="Last name" 
+                                                required/>
+                                        </div>
                                         <div className="form-group ">
                                             <input 
                                                 type="Email" 
@@ -33,11 +49,7 @@ class Login extends Component{
                                                 required/>
                                         </div>
                                         <div className="text-center">
-                                            <button type="submit" class="btn btn-dark mb-2">Login</button>
-                                            <a href="http://google.com.ve" class="btn btn-dark mb-2 mx-md-2">Register</a>
-                                        </div>
-                                        <div className="text-center">
-                                            <a href="#" class="text-dark">Forgot password?</a>
+                                            <button type="submit" class="btn btn-dark mb-2">Register</button>
                                         </div>
                                     </form>
                                 </div>
@@ -50,4 +62,4 @@ class Login extends Component{
     }
 }
 
-export default Login;
+export default Register;
