@@ -1,6 +1,6 @@
 npm install webpack-cli -D
 npm install webpack -D
-npm install -s bcrypt-nodejs
+npm install -s bcrypt -D
 npm install mongoose --save
 npm install morgan       
 npm install nodemon -D   

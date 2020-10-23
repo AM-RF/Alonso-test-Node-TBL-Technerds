@@ -5,4 +5,4 @@ import Login from './Login';
 import Register from './Register';
 import App from './App';
 
-render(<Register/>, document.getElementById('app'));
+render(<App/>, document.getElementById('app'));
